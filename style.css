@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+/* intro */
+.intro-body {
+    background-image: url(https://media.giphy.com/media/gQwyrzd79IqHu/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    clear: both;
+    text-align: center;
+    clear: both;
+    display: flex;
+    height: 60rem;
+    width: 100%;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Quintessential', cursive;
+    
+}
+
+.intro-sec {
+    width: 30%;
+    margin-top: 20em;
+}
+
+.intro-sec a {
+   padding: 1em;
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+/* Main */
+.main-body {
+    background-image: url(https://media.giphy.com/media/ayMW3eqvuP00o/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    align-content: space-between;
+    gap: 20px;
+    flex-flow: column wrap;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Quintessential', cursive;
+}
+
+header, footer {
+    clear: both;
+}
+
+
+header {
+    width: 100%;
+    height: 30%;
+   
+}
+
+.header-container {
+    width: 40%;
+    margin-top: 2em;
+    /* margin-bottom: 2em; */
+    margin-left: .5em;
+    padding: 1em;
+    border: 3px gray solid;
+    border-radius: 30% 30% 30% 30%;
+    text-align: center;
+    /* flex-direction: column; */
+    align-content: space-between;
+
+    box-shadow: inset 0 0 20px #000000;
+}
+
+header h1 {
+    color: gray;
+    font-size: 40px;
+}
+
+header span {
+    font-size: 25px;
+    font-weight: 600; 
+    color: darkgray;
+}
+
+header p {
+    font-size: 30px;
+    color: rgb(226, 226, 226);
+    font-weight: 700;
+}
+
+.container {
+    /* border: 3px solid black; */
+    width: 100%;
+    height: 40rem;
+    flex-flow: row nowrap;
+    align-content: space-around;
+    justify-content: left;
+    display: flex;
+    gap: 40rem;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 2rem;
+}
+
+.selection {
+    width: 100%;
+}
+
+
+.btn {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 30%;
+}
+
+.btn-rock {
+    
+    background-image: url("https://media.giphy.com/media/Wo0Yw7qwzgQak/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    transform: 100ms;
+    
+}
+
+.btn-rock:hover {
+    transform: scale(1.2);
+}
+
+.btn-paper {
+    background-image: url("https://media.giphy.com/media/oje6kPRIef6Gk/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    transition: 100ms;
+}
+
+.btn-paper:hover {
+    transform: scale(1.2);
+}
+
+.btn-scissors {
+    background-image: url("https://media.giphy.com/media/oktW1eBGpHOoM/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    transition: 100ms;
+}
+
+.btn-scissors:hover {
+    transform: scale(1.2);
+}
+
+.results {
+    margin-right: 5rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 2fr);
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    /* border: green 3px solid; */
+    font-size: 25px;
+    color: yellow;
+}
+
+.result-score {
+    margin-left: .3rem;
+    font-size: 3rem;
+    color: pink;
+}
+
+.result-selection {
+    opacity: .5;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1430px) {
+    .btn {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 30%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    header h1 {
+        margin-top: 0;
+       font-size: 29px;
+    }
+
+    header span {
+        font-size: 25px;
+    }
+    
+    header p {
+        font-size: 20px;
+        color: rgb(226, 226, 226);
+        font-weight: 600;
+    }
+
+    .container {
+        gap: 25rem;
+    }
+    
+    .btn {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 30%;
+    }
+    .results {
+        margin-right: 5rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 2fr);
+        justify-items: center;
+        align-items: center;
+        /* border: green 3px solid; */
+        font-size: 30px;
+        color: yellow;
+    }
+        
+}
+
+@media screen and (max-width: 880px) {
+    .header-container {
+        width: 45%;
+    }
+    
+    header h1 {
+        margin-top: 0;
+       font-size: 29px;
+    }
+
+    header span {
+        font-size: 25px;
+    }
+    
+    header p {
+        font-size: 20px;
+        color: rgb(226, 226, 226);
+        font-weight: 600;
+    }
+
+    .container {
+        gap: 15rem;
+    }
+    
+    
+    .btn {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 30%;
+    }
+    .results {
+        margin-right: 5rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 2fr);
+        justify-items: center;
+        align-items: center;
+        font-size: 25px;
+        color: yellow;
+    }
+        
+}
+
+@media screen and (max-width: 690px) {
+    .header-container {
+        width: 50%;
+    }
+    
+    header h1 {
+        margin-top: 0;
+       font-size: 29px;
+    }
+
+    header span {
+        font-size: 25px;
+    }
+    
+    header p {
+        font-size: 20px;
+        color: rgb(226, 226, 226);
+        font-weight: 600;
+    }
+
+    .container {
+        gap: 10rem;
+    }
+    
+    
+    .btn {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 30%;
+    }
+    .results {
+        margin-right: 5rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 2fr);
+        justify-items: center;
+        align-items: center;
+        font-size: 25px;
+        color: yellow;
+    }
+        
+}
+
+@media screen and (max-width: 590px) {
+    .header-container {
+        width: 60%;
+    }
+    
+    header h1 {
+        margin-top: 0;
+       font-size: 29px;
+       color: rgb(226, 226, 226);
+    }
+
+    header span {
+        font-size: 25px;
+        color: rgb(226, 226, 226);
+    }
+    
+    header p {
+        font-size: 20px;
+        color: rgb(226, 226, 226);
+        font-weight: 600;
+    }
+
+    .main-body {
+        background-size: contain;
+        margin: 0;
+        background-repeat: repeat-y;
+        
+    }
+
+    .container {
+        gap: 6rem;
+    }
+    
+    
+    .btn {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 30%;
+    }
+    .results {
+        margin-right: 5rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 2fr);
+        justify-items: center;
+        align-items: center;
+        font-size: 25px;
+        color: yellow;
+    }
+        
+}

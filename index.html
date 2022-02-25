@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-NoFace</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quintessential&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body class="main-body">
+    <header>
+        <div class="header-container">
+            <h1>noFace is hungry!</h1>
+            <span>Help noFace pick out a friend to <b>eat</b>.</span>
+            <p>
+                Calcifer warms forest spirits. <br>
+                Soot sprites feed Calcifer. <br>
+                Forest spirits warn soot sprites of danger!
+            </p>
+        </div>
+    </header>
+    <section class="container">
+        <section class="selection">
+            <button class="btn btn-rock" data-selection="rock" ></button>
+            <button class="btn btn-paper" data-selection="paper"></button>
+            <button class="btn btn-scissors" data-selection="scissors"></button>
+        </section>
+        <section class="results">
+            <div>You <br>
+                <span class="result-score" data-your-score>0</span>
+            </div>
+            <div data-final-column>
+                No-Face <br>
+                <span class="result-score" data-computer-score>0</span>
+            </div>
+        </section>
+    </section>
+    
+</body>
+</html>
